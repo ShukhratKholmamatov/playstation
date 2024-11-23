@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>PlayStation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo" alt="">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Game Controllers</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li id="li"><a href="#">Media Remotes</a></li>
+                    <li id="lin"><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2<br> Dualshock 4</h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="img/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller" alt="">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png" class="" alt="">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media_links">
+                <img src="img/fb.png" alt="">
+                <img src="img/tw.png" alt="">
+                <img src="img/ig.png" alt="">
+        </div>
+
+    </div>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var li = document.getElementById('li');
+        var lin = document.getElementById('lin');
+
+        menu.style.maxHeight = "0px";
+        li.style.opacity = "0";
+
+        function togglemenu(){
+            if (menu.style.maxHeight == "0px" || li.style.opacity == "0" ||lin.style.opacity == "0") {
+                menu.style.maxHeight = "130px";
+                li.style.opacity = "1";
+                lin.style.opacity = "1";
+            }else{
+                menu.style.maxHeight = "0px";
+                li.style.opacity = "0";
+                lin.style.opacity = "0";
+            }
+        }
+
+    </script>
+</body>
+</html>
